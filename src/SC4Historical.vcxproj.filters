@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\GZCOM">
+      <UniqueIdentifier>{1c3887e8-34b2-4b6e-9f47-1bb3ad8c77ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GZCOM">
+      <UniqueIdentifier>{89c84c7c-87cc-4da3-8229-1522c6ced69a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\EASTL">
+      <UniqueIdentifier>{438997b2-52fc-4bca-9845-1a885eea912d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\SC4-GROWIFY">
+      <UniqueIdentifier>{8b262b38-d814-42e1-91c6-d2aa9018d9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SC4-GROWIFY">
+      <UniqueIdentifier>{1de218a5-84ff-4c9b-9aac-8ee0bac93f67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cIGZCheatCodeManager.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cIGZWinBtn.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4App.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4BuildingOccupant.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4City.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4Lot.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4LotManager.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4Occupant.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4SimGrid.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4ZoneManager.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\StringResourceKey.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\gzcom-dll\include\StringResourceManager.h">
+      <Filter>头文件\GZCOM</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\sc4-growify\StringViewUtil.h">
+      <Filter>头文件\SC4-GROWIFY</Filter>
+    </ClInclude>
+    <ClInclude Include="Historical.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OccupantFilter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\sc4-growify\SC4NotificationDialog.h">
+      <Filter>头文件\SC4-GROWIFY</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZBaseString.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZBaseVariant.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZCOMDllDirector.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZMessage2.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZMessage2Standard.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\cS3DVector3.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\cSCBaseProperty.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\EASTLAllocatorSC4.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\SC4UI.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\gzcom-dll\src\StringResourceManager.cpp">
+      <Filter>源文件\GZCOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\assert.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\atomic.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\fixed_pool.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\hashtable.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\intrusive_list.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\numeric_limits.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\red_black_tree.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\string.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\EASTL\source\thread_support.cpp">
+      <Filter>源文件\EASTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\sc4-growify\StringViewUtil.cpp">
+      <Filter>源文件\SC4-GROWIFY</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoricalDllDirector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Historical.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OccupantFilter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\sc4-growify\SC4NotificationDialog.cpp">
+      <Filter>源文件\SC4-GROWIFY</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="vcpkg.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SC4Historical.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

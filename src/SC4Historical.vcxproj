@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.props" Condition="Exists('packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1dcd8c12-4a57-456c-9673-c50d05c9eb49}</ProjectGuid>
+    <RootNamespace>SC4Historical</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="Vcpkg">
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;SC4HISTORICAL_EXPORTS;_WINDOWS;_USRDLL;SC4BUDGETDEPARTMENTTESTING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\vendor\sc4-growify;..\vendor\gzcom-dll\include;..\vendor\EASTL\include;..\vendor\EABase\include\Common;.\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;SC4HISTORICAL_EXPORTS;_WINDOWS;_USRDLL;SC4BUDGETDEPARTMENTTESTING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile />
+      <AdditionalIncludeDirectories>..\vendor\sc4-growify;..\vendor\gzcom-dll\include;..\vendor\EASTL\include;..\vendor\EABase\include\Common;.\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;SC4HISTORICAL_EXPORTS;SC4BUDGETDEPARTMENTTESTING_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\vendor\gzcom-dll\include;..\vendor\EASTL\include;..\vendor\EABase\include\Common;.\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>version.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;SC4HISTORICAL_EXPORTS;_WINDOWS;_USRDLL;SC4BUDGETDEPARTMENTTESTING_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>version.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\vendor\gzcom-dll\include\cIGZCheatCodeManager.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cIGZWinBtn.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4App.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4BuildingOccupant.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4City.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4Lot.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4LotManager.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4Occupant.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4SimGrid.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\cISC4ZoneManager.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\StringResourceKey.h" />
+    <ClInclude Include="..\vendor\gzcom-dll\include\StringResourceManager.h" />
+    <ClInclude Include="..\vendor\sc4-growify\SC4NotificationDialog.h" />
+    <ClInclude Include="..\vendor\sc4-growify\StringViewUtil.h" />
+    <ClInclude Include="Historical.h" />
+    <ClInclude Include="OccupantFilter.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\vendor\EASTL\source\assert.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\atomic.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\fixed_pool.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\hashtable.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\intrusive_list.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\numeric_limits.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\red_black_tree.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\string.cpp" />
+    <ClCompile Include="..\vendor\EASTL\source\thread_support.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZBaseString.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZBaseVariant.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZCOMDllDirector.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZMessage2.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\cRZMessage2Standard.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\cS3DVector3.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\cSCBaseProperty.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\EASTLAllocatorSC4.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\SC4UI.cpp" />
+    <ClCompile Include="..\vendor\gzcom-dll\src\StringResourceManager.cpp" />
+    <ClCompile Include="..\vendor\sc4-growify\SC4NotificationDialog.cpp" />
+    <ClCompile Include="..\vendor\sc4-growify\StringViewUtil.cpp" />
+    <ClCompile Include="Historical.cpp" />
+    <ClCompile Include="HistoricalDllDirector.cpp" />
+    <ClCompile Include="OccupantFilter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="vcpkg.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SC4Historical.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.targets" Condition="Exists('packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.props'))" />
+    <Error Condition="!Exists('packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\vcpkg.D.zrf.Documents.Develop.vcpkg.1.0.0\build\native\vcpkg.D.zrf.Documents.Develop.vcpkg.targets'))" />
+  </Target>
+</Project>
