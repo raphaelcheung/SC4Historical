@@ -18,21 +18,21 @@ Plug-ins can be downloaded from the distribution page.
 ## Installation
 
 1. Shut down SimCity 4.
-2. Copy the 'sc4history.dll' file to the plugin directory of SimCity 4.
+2. Copy the `sc4history.dll` file to the plugin directory of SimCity 4.
 3. Run SimCity 4.
 
 ## Use plugins
 
 After entering the map, press Ctrl+X to open the command line and type:
 
-'his < building type > < minimum capacity > [declared historic building]'
+`his < building type > < minimum capacity > [declared historic building]`
 
 
-'< building type >' : Here can be r, o, s, i, corresponding to residential, commercial, service, industrial buildings;
+`< building type >` : Here can be r, o, s, i, corresponding to residential, commercial, service, industrial buildings;
 
-'< Minimum capacity >' : An integer value. This command applies only to buildings with a capacity greater than or equal to this capacity;
+`< Minimum capacity >` : An integer value. This command applies only to buildings with a capacity greater than or equal to this capacity;
 
-'[Declare historic building]' : Fill in true, false.
+`[Declare historic building]` : Fill in true, false.
 
 ### Examples
 If you want to set up office buildings with a capacity of more than 300 as historic buildings, the order is as follows:
