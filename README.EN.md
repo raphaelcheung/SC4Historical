@@ -18,7 +18,9 @@ Plug-ins can be downloaded from the distribution page.
 ## Installation
 
 1. Shut down SimCity 4.
+
 2. Copy the `sc4history.dll` file to the plugin directory of SimCity 4.
+
 3. Run SimCity 4.
 
 ## Use plugins
@@ -35,10 +37,13 @@ After entering the map, press Ctrl+X to open the command line and type:
 `[Declare historic building]` : Fill in true, false.
 
 ### Examples
+
 If you want to set up office buildings with a capacity of more than 300 as historic buildings, the order is as follows:
+
 `his o 300 true`
 
 Eliminate all residential buildings as historic buildings:
+
 `his r 0 false`
 
 # License
@@ -56,9 +61,12 @@ View [LICENSE.txt](LICENSE.txt) for details.
 [EASTL](https://github.com/electronicarts/EASTL) Located in the vendor folder, BSD 3-Clause License.
 
 [Windows Implementation Library](https://github.com/microsoft/wil) - MIT License
+
 [SC4Fix](https://github.com/nsgomez/sc4fix) - MIT License
+
 [Boost.Algorithm](https://www.boost.org/doc/libs/1_84_0/libs/algorithm/doc/html/index.html) - Boost Software License,  Version 1.0.
-[sc4-growify]()
+
+[sc4-growify](https://github.com/0xC0000054/sc4-growify) - MIT License   
 
 # Source code
 
